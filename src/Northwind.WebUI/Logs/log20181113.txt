@@ -1,0 +1,118 @@
+2018-11-13 01:50:41.476 -08:00 [INF] Starting Northwind WebUI
+2018-11-13 01:50:41.672 -08:00 [INF] User profile is available. Using 'C:\Users\bing\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-13 01:50:44.807 -08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/values  
+2018-11-13 01:50:44.898 -08:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action Northwind.WebUI.Controllers.ValuesController.Get (Northwind.WebUI)
+2018-11-13 01:50:44.906 -08:00 [INF] Executing action method Northwind.WebUI.Controllers.ValuesController.Get (Northwind.WebUI) - Validation state: "Valid"
+2018-11-13 01:50:44.910 -08:00 [INF] Executed action method Northwind.WebUI.Controllers.ValuesController.Get (Northwind.WebUI), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.1981ms.
+2018-11-13 01:50:44.916 -08:00 [INF] Executing ObjectResult, writing value of type 'System.String[]'.
+2018-11-13 01:50:44.953 -08:00 [INF] Executed action Northwind.WebUI.Controllers.ValuesController.Get (Northwind.WebUI) in 50.973200000000006ms
+2018-11-13 01:50:44.957 -08:00 [INF] Request finished in 151.6076ms 200 application/json; charset=utf-8
+2018-11-13 01:54:24.963 -08:00 [INF] Starting Northwind WebUI
+2018-11-13 01:54:25.154 -08:00 [INF] User profile is available. Using 'C:\Users\bing\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-13 01:54:31.178 -08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/values  
+2018-11-13 01:54:31.301 -08:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action Northwind.WebUI.Controllers.ValuesController.Get (Northwind.WebUI)
+2018-11-13 01:54:31.309 -08:00 [INF] Executing action method Northwind.WebUI.Controllers.ValuesController.Get (Northwind.WebUI) - Validation state: "Valid"
+2018-11-13 01:54:31.312 -08:00 [INF] Executed action Northwind.WebUI.Controllers.ValuesController.Get (Northwind.WebUI) in 8.3239ms
+2018-11-13 01:54:31.313 -08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: this is a test
+   at Northwind.WebUI.Controllers.ValuesController.Get() in e:\Projects\Northwind\Northwind.WebUI\Controllers\ValuesController.cs:line 15
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2018-11-13 01:54:31.413 -08:00 [INF] Request finished in 236.6406ms 500 text/html; charset=utf-8
+2018-11-13 02:12:02.508 -08:00 [INF] Starting Northwind WebUI
+2018-11-13 02:12:02.700 -08:00 [INF] User profile is available. Using 'C:\Users\bing\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-13 02:13:33.327 -08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/product  
+2018-11-13 02:13:33.364 -08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Action 'Northwind.WebUI.Controllers.ProductController.Get (Northwind.WebUI)' does not have an attribute route. Action methods on controllers annotated with ApiControllerAttribute must be attribute routed.
+   at Microsoft.AspNetCore.Mvc.Internal.ApiBehaviorApplicationModelProvider.EnsureActionIsAttributeRouted(Boolean controllerHasSelectorModel, ActionModel actionModel)
+   at Microsoft.AspNetCore.Mvc.Internal.ApiBehaviorApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionDescriptorProvider.BuildModel()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionDescriptorCollectionProvider.UpdateCollection()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionDescriptorCollectionProvider.get_ActionDescriptors()
+   at Microsoft.AspNetCore.Mvc.Internal.AttributeRoute.GetTreeRouter()
+   at Microsoft.AspNetCore.Mvc.Internal.AttributeRoute.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.RouteCollection.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2018-11-13 02:13:33.399 -08:00 [INF] Request finished in 73.1156ms 500 text/html; charset=utf-8
+2018-11-13 02:14:37.248 -08:00 [INF] Starting Northwind WebUI
+2018-11-13 02:14:37.422 -08:00 [INF] User profile is available. Using 'C:\Users\bing\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-13 02:14:40.731 -08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/product  
+2018-11-13 02:14:40.816 -08:00 [INF] Route matched with {action = "Get", controller = "Product"}. Executing action Northwind.WebUI.Controllers.ProductController.Get (Northwind.WebUI)
+2018-11-13 02:14:40.824 -08:00 [INF] Executing action method Northwind.WebUI.Controllers.ProductController.Get (Northwind.WebUI) - Validation state: "Valid"
+2018-11-13 02:14:40.828 -08:00 [INF] Executed action method Northwind.WebUI.Controllers.ProductController.Get (Northwind.WebUI), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.1907ms.
+2018-11-13 02:14:40.835 -08:00 [INF] Executing ObjectResult, writing value of type 'System.String[]'.
+2018-11-13 02:14:40.870 -08:00 [INF] Executed action Northwind.WebUI.Controllers.ProductController.Get (Northwind.WebUI) in 51.3945ms
+2018-11-13 02:14:40.875 -08:00 [INF] Request finished in 146.2192ms 200 application/json; charset=utf-8
+2018-11-13 03:17:53.608 -08:00 [INF] Starting Northwind WebUI
+2018-11-13 03:17:53.862 -08:00 [INF] User profile is available. Using 'C:\Users\bing\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-13 03:18:06.974 -08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/products/getall  
+2018-11-13 03:18:07.098 -08:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing action Northwind.WebUI.Controllers.ProductsController.Get (Northwind.WebUI)
+2018-11-13 03:18:07.307 -08:00 [INF] Executing action method Northwind.WebUI.Controllers.ProductsController.Get (Northwind.WebUI) with arguments (["0"]) - Validation state: "Invalid"
+2018-11-13 03:18:07.309 -08:00 [INF] Executed action method Northwind.WebUI.Controllers.ProductsController.Get (Northwind.WebUI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.2692ms.
+2018-11-13 03:18:07.316 -08:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2018-11-13 03:18:07.322 -08:00 [INF] Executed action Northwind.WebUI.Controllers.ProductsController.Get (Northwind.WebUI) in 220.51850000000002ms
+2018-11-13 03:18:07.326 -08:00 [INF] Request finished in 354.9838ms 200 text/plain; charset=utf-8
+2018-11-13 03:24:09.187 -08:00 [INF] Starting Northwind WebUI
+2018-11-13 03:24:09.396 -08:00 [INF] User profile is available. Using 'C:\Users\bing\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-13 03:24:15.508 -08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/products/getall  
+2018-11-13 03:24:15.611 -08:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing action Northwind.WebUI.Controllers.ProductsController.Get (Northwind.WebUI)
+2018-11-13 03:24:15.676 -08:00 [INF] Executing action method Northwind.WebUI.Controllers.ProductsController.Get (Northwind.WebUI) with arguments (["0"]) - Validation state: "Invalid"
+2018-11-13 03:24:15.679 -08:00 [INF] Executed action method Northwind.WebUI.Controllers.ProductsController.Get (Northwind.WebUI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.22920000000000001ms.
+2018-11-13 03:24:15.685 -08:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2018-11-13 03:24:15.691 -08:00 [INF] Executed action Northwind.WebUI.Controllers.ProductsController.Get (Northwind.WebUI) in 77.0229ms
+2018-11-13 03:24:15.695 -08:00 [INF] Request finished in 189.0025ms 200 text/plain; charset=utf-8
+2018-11-13 03:25:37.350 -08:00 [INF] Starting Northwind WebUI
+2018-11-13 03:25:37.529 -08:00 [INF] User profile is available. Using 'C:\Users\bing\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-13 03:25:55.349 -08:00 [INF] Starting Northwind WebUI
+2018-11-13 03:25:55.543 -08:00 [INF] User profile is available. Using 'C:\Users\bing\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-13 03:25:59.349 -08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/products/getall  
+2018-11-13 03:25:59.470 -08:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing action Northwind.WebUI.Controllers.ProductsController.Get (Northwind.WebUI)
+2018-11-13 03:25:59.550 -08:00 [INF] Executing action method Northwind.WebUI.Controllers.ProductsController.Get (Northwind.WebUI) with arguments (["0"]) - Validation state: "Invalid"
+2018-11-13 03:25:59.554 -08:00 [INF] Executed action method Northwind.WebUI.Controllers.ProductsController.Get (Northwind.WebUI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.40190000000000003ms.
+2018-11-13 03:25:59.561 -08:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2018-11-13 03:25:59.568 -08:00 [INF] Executed action Northwind.WebUI.Controllers.ProductsController.Get (Northwind.WebUI) in 94.2311ms
+2018-11-13 03:25:59.574 -08:00 [INF] Request finished in 225.8793ms 200 text/plain; charset=utf-8
+2018-11-13 03:28:28.245 -08:00 [INF] Starting Northwind WebUI
+2018-11-13 03:28:28.429 -08:00 [INF] User profile is available. Using 'C:\Users\bing\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-13 03:28:33.750 -08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/products/getall  
+2018-11-13 03:28:33.847 -08:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing action Northwind.WebUI.Controllers.ProductsController.GetAll (Northwind.WebUI)
+2018-11-13 03:28:33.911 -08:00 [INF] Executing action method Northwind.WebUI.Controllers.ProductsController.GetAll (Northwind.WebUI) - Validation state: "Valid"
+2018-11-13 03:28:33.915 -08:00 [INF] Executed action method Northwind.WebUI.Controllers.ProductsController.GetAll (Northwind.WebUI), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.3539ms.
+2018-11-13 03:28:33.922 -08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[Norwind.Domain.Entities.Product, Norwind.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-13 03:28:34.043 -08:00 [WRN] No type was specified for the decimal column 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-11-13 03:28:34.072 -08:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: NoTracking 
+2018-11-13 03:28:34.355 -08:00 [INF] Executed DbCommand (130ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[Discontinued], [p].[ProductName], [p].[QuantityPerUnit], [p].[ReorderLevel], [p].[SupplierId], [p].[UnitPrice], [p].[UnitsInStock], [p].[UnitsOnOrder]
+FROM [Products] AS [p]
+2018-11-13 03:28:34.374 -08:00 [INF] Executed action Northwind.WebUI.Controllers.ProductsController.GetAll (Northwind.WebUI) in 524.1352ms
+2018-11-13 03:28:34.378 -08:00 [INF] Request finished in 629.8497ms 200 application/json; charset=utf-8
+2018-11-13 03:53:57.961 -08:00 [INF] Starting Northwind WebUI
+2018-11-13 03:53:58.169 -08:00 [INF] User profile is available. Using 'C:\Users\bing\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-13 03:54:05.093 -08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/products/getall  
+2018-11-13 03:54:05.186 -08:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing action Northwind.WebUI.Controllers.ProductsController.GetAll (Northwind.WebUI)
+2018-11-13 03:54:05.196 -08:00 [INF] Executing action method Northwind.WebUI.Controllers.ProductsController.GetAll (Northwind.WebUI) - Validation state: "Valid"
+2018-11-13 03:54:05.381 -08:00 [WRN] No type was specified for the decimal column 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-11-13 03:54:05.410 -08:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: NoTracking 
+2018-11-13 03:54:05.583 -08:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [x].[ProductName]
+FROM [Products] AS [x]
+2018-11-13 03:54:05.602 -08:00 [INF] Executed action method Northwind.WebUI.Controllers.ProductsController.GetAll (Northwind.WebUI), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 403.75050000000005ms.
+2018-11-13 03:54:05.612 -08:00 [INF] Executing ObjectResult, writing value of type 'Northwind.Application.Products.Queries.ProductsListResult'.
+2018-11-13 03:54:05.652 -08:00 [INF] Executed action Northwind.WebUI.Controllers.ProductsController.GetAll (Northwind.WebUI) in 463.0049ms
+2018-11-13 03:54:05.659 -08:00 [INF] Request finished in 567.007ms 200 application/json; charset=utf-8
