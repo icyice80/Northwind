@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Northwind.Application.Products.Queries
+namespace Northwind.Application.Products.Queries.GetProducts
 {
     public class ProductsListResult
     {

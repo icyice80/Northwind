@@ -116,3 +116,88 @@ FROM [Products] AS [x]
 2018-11-13 03:54:05.612 -08:00 [INF] Executing ObjectResult, writing value of type 'Northwind.Application.Products.Queries.ProductsListResult'.
 2018-11-13 03:54:05.652 -08:00 [INF] Executed action Northwind.WebUI.Controllers.ProductsController.GetAll (Northwind.WebUI) in 463.0049ms
 2018-11-13 03:54:05.659 -08:00 [INF] Request finished in 567.007ms 200 application/json; charset=utf-8
+2018-11-13 16:01:47.899 -08:00 [INF] Starting Northwind WebUI
+2018-11-13 16:01:49.834 -08:00 [INF] User profile is available. Using 'C:\Users\bing\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-13 16:02:09.192 -08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/products/getall  
+2018-11-13 16:02:09.641 -08:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing action Northwind.WebUI.Controllers.ProductsController.GetAll (Northwind.WebUI)
+2018-11-13 16:02:09.649 -08:00 [INF] Executing action method Northwind.WebUI.Controllers.ProductsController.GetAll (Northwind.WebUI) - Validation state: "Valid"
+2018-11-13 16:02:09.930 -08:00 [WRN] No type was specified for the decimal column 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-11-13 16:02:09.958 -08:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: NoTracking 
+2018-11-13 16:02:10.182 -08:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [x].[ProductId], [x].[CategoryId], [x].[Discontinued], [x].[ProductName], [x].[QuantityPerUnit], [x].[ReorderLevel], [x].[SupplierId], [x].[UnitPrice], [x].[UnitsInStock], [x].[UnitsOnOrder]
+FROM [Products] AS [x]
+2018-11-13 16:02:10.227 -08:00 [INF] Executed action method Northwind.WebUI.Controllers.ProductsController.GetAll (Northwind.WebUI), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 575.44170000000008ms.
+2018-11-13 16:02:10.236 -08:00 [INF] Executing ObjectResult, writing value of type 'Northwind.Application.Products.Queries.ProductsListResult'.
+2018-11-13 16:02:10.275 -08:00 [INF] Executed action Northwind.WebUI.Controllers.ProductsController.GetAll (Northwind.WebUI) in 631.1219ms
+2018-11-13 16:02:10.280 -08:00 [INF] Request finished in 1089.4871ms 200 application/json; charset=utf-8
+2018-11-13 16:03:35.825 -08:00 [INF] Starting Northwind WebUI
+2018-11-13 16:03:36.275 -08:00 [INF] User profile is available. Using 'C:\Users\bing\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-13 16:03:40.558 -08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/products/getall  
+2018-11-13 16:03:40.655 -08:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing action Northwind.WebUI.Controllers.ProductsController.GetAll (Northwind.WebUI)
+2018-11-13 16:03:40.664 -08:00 [INF] Executing action method Northwind.WebUI.Controllers.ProductsController.GetAll (Northwind.WebUI) - Validation state: "Valid"
+2018-11-13 16:03:40.815 -08:00 [WRN] No type was specified for the decimal column 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-11-13 16:03:40.843 -08:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: NoTracking 
+2018-11-13 16:03:40.998 -08:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [x].[ProductId], [x].[CategoryId], [x].[Discontinued], [x].[ProductName], [x].[QuantityPerUnit], [x].[ReorderLevel], [x].[SupplierId], [x].[UnitPrice], [x].[UnitsInStock], [x].[UnitsOnOrder]
+FROM [Products] AS [x]
+2018-11-13 16:03:41.045 -08:00 [INF] Executed action method Northwind.WebUI.Controllers.ProductsController.GetAll (Northwind.WebUI), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 379.024ms.
+2018-11-13 16:03:41.053 -08:00 [INF] Executing ObjectResult, writing value of type 'Northwind.Application.Products.Queries.ProductsListResult'.
+2018-11-13 16:03:41.093 -08:00 [INF] Executed action Northwind.WebUI.Controllers.ProductsController.GetAll (Northwind.WebUI) in 436.1406ms
+2018-11-13 16:03:41.100 -08:00 [INF] Request finished in 542.8284ms 200 application/json; charset=utf-8
+2018-11-13 16:58:47.285 -08:00 [INF] Starting Northwind WebUI
+2018-11-13 16:58:47.716 -08:00 [INF] User profile is available. Using 'C:\Users\bing\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-13 16:59:05.372 -08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/products/getall  
+2018-11-13 16:59:05.458 -08:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing action Northwind.WebUI.Controllers.ProductsController.GetAll (Northwind.WebUI)
+2018-11-13 16:59:05.465 -08:00 [INF] Executing action method Northwind.WebUI.Controllers.ProductsController.GetAll (Northwind.WebUI) - Validation state: "Valid"
+2018-11-13 16:59:05.640 -08:00 [WRN] No type was specified for the decimal column 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-11-13 16:59:05.674 -08:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: NoTracking 
+2018-11-13 16:59:05.831 -08:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [x].[ProductId], [x].[CategoryId], [x].[Discontinued], [x].[ProductName], [x].[QuantityPerUnit], [x].[ReorderLevel], [x].[SupplierId], [x].[UnitPrice], [x].[UnitsInStock], [x].[UnitsOnOrder]
+FROM [Products] AS [x]
+2018-11-13 16:59:05.872 -08:00 [INF] Executed action method Northwind.WebUI.Controllers.ProductsController.GetAll (Northwind.WebUI), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 403.992ms.
+2018-11-13 16:59:05.880 -08:00 [INF] Executing ObjectResult, writing value of type 'Northwind.Application.Products.Queries.GetProducts.ProductsListResult'.
+2018-11-13 16:59:05.929 -08:00 [INF] Executed action Northwind.WebUI.Controllers.ProductsController.GetAll (Northwind.WebUI) in 460.3616ms
+2018-11-13 16:59:05.936 -08:00 [INF] Request finished in 565.2513ms 200 application/json; charset=utf-8
+2018-11-13 16:59:15.741 -08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/product/get/0  
+2018-11-13 16:59:15.743 -08:00 [INF] Request finished in 2.0271ms 404 
+2018-11-13 16:59:21.495 -08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/product/get/1  
+2018-11-13 16:59:21.495 -08:00 [INF] Request finished in 0.1808ms 404 
+2018-11-13 16:59:32.309 -08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/products/get/1  
+2018-11-13 16:59:32.357 -08:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing action Northwind.WebUI.Controllers.ProductsController.Get (Northwind.WebUI)
+2018-11-13 16:59:32.380 -08:00 [INF] Executing action method Northwind.WebUI.Controllers.ProductsController.Get (Northwind.WebUI) with arguments (["1"]) - Validation state: "Valid"
+2018-11-13 16:59:32.385 -08:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: NoTracking 
+2018-11-13 16:59:32.423 -08:00 [INF] Executed DbCommand (4ms) [Parameters=[@__request_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [p].[ProductId], [p].[CategoryId], [p].[Discontinued], [p].[ProductName], [p].[QuantityPerUnit], [p].[ReorderLevel], [p].[SupplierId], [p].[UnitPrice], [p].[UnitsInStock], [p].[UnitsOnOrder]
+FROM [Products] AS [p]
+WHERE [p].[ProductId] = @__request_Id_0
+2018-11-13 16:59:32.430 -08:00 [INF] Executed action method Northwind.WebUI.Controllers.ProductsController.Get (Northwind.WebUI), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 49.861900000000006ms.
+2018-11-13 16:59:32.431 -08:00 [INF] Executing ObjectResult, writing value of type 'Northwind.Application.Products.Queries.GetProduct.ProductResult'.
+2018-11-13 16:59:32.432 -08:00 [INF] Executed action Northwind.WebUI.Controllers.ProductsController.Get (Northwind.WebUI) in 75.0113ms
+2018-11-13 16:59:32.432 -08:00 [INF] Request finished in 123.8033ms 200 application/json; charset=utf-8
+2018-11-13 16:59:38.988 -08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/products/get/0  
+2018-11-13 16:59:38.989 -08:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing action Northwind.WebUI.Controllers.ProductsController.Get (Northwind.WebUI)
+2018-11-13 16:59:38.990 -08:00 [INF] Executing action method Northwind.WebUI.Controllers.ProductsController.Get (Northwind.WebUI) with arguments (["0"]) - Validation state: "Valid"
+2018-11-13 16:59:38.991 -08:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: NoTracking 
+2018-11-13 16:59:38.995 -08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__request_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [p].[ProductId], [p].[CategoryId], [p].[Discontinued], [p].[ProductName], [p].[QuantityPerUnit], [p].[ReorderLevel], [p].[SupplierId], [p].[UnitPrice], [p].[UnitsInStock], [p].[UnitsOnOrder]
+FROM [Products] AS [p]
+WHERE [p].[ProductId] = @__request_Id_0
+2018-11-13 16:59:38.996 -08:00 [INF] Executed action method Northwind.WebUI.Controllers.ProductsController.Get (Northwind.WebUI), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 5.3201ms.
+2018-11-13 16:59:38.996 -08:00 [INF] Executing ObjectResult, writing value of type 'Northwind.Application.Products.Queries.GetProduct.ProductResult'.
+2018-11-13 16:59:38.996 -08:00 [INF] Executed action Northwind.WebUI.Controllers.ProductsController.Get (Northwind.WebUI) in 7.2539000000000007ms
+2018-11-13 16:59:38.996 -08:00 [INF] Request finished in 8.2507ms 200 application/json; charset=utf-8
+2018-11-13 17:01:46.068 -08:00 [INF] Starting Northwind WebUI
+2018-11-13 17:01:46.532 -08:00 [INF] User profile is available. Using 'C:\Users\bing\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-13 17:01:56.695 -08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/products/get/0  
+2018-11-13 17:01:56.789 -08:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing action Northwind.WebUI.Controllers.ProductsController.Get (Northwind.WebUI)
+2018-11-13 17:01:56.813 -08:00 [INF] Executing action method Northwind.WebUI.Controllers.ProductsController.Get (Northwind.WebUI) with arguments (["0"]) - Validation state: "Valid"
+2018-11-13 17:01:56.976 -08:00 [WRN] No type was specified for the decimal column 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-11-13 17:01:57.003 -08:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'NorthwindDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: NoTracking 
+2018-11-13 17:01:57.166 -08:00 [INF] Executed DbCommand (11ms) [Parameters=[@__request_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [p].[ProductId], [p].[CategoryId], [p].[Discontinued], [p].[ProductName], [p].[QuantityPerUnit], [p].[ReorderLevel], [p].[SupplierId], [p].[UnitPrice], [p].[UnitsInStock], [p].[UnitsOnOrder]
+FROM [Products] AS [p]
+WHERE [p].[ProductId] = @__request_Id_0
+2018-11-13 17:01:57.189 -08:00 [INF] Executed action method Northwind.WebUI.Controllers.ProductsController.Get (Northwind.WebUI), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 373.1524ms.
+2018-11-13 17:01:57.197 -08:00 [INF] Executing ObjectResult, writing value of type 'Northwind.Application.Products.Queries.GetProduct.ProductResult'.
+2018-11-13 17:01:57.230 -08:00 [INF] Executed action Northwind.WebUI.Controllers.ProductsController.Get (Northwind.WebUI) in 438.0849ms
+2018-11-13 17:01:57.236 -08:00 [INF] Request finished in 542.1097ms 200 application/json; charset=utf-8

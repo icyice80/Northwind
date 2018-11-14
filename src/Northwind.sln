@@ -11,15 +11,20 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{5E3B55ED
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{66E98C5D-BD19-4CC2-AAB3-2926CE55B7C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.WebUI", "Northwind.WebUI\Northwind.WebUI.csproj", "{0F03DFAE-C080-4664-9388-48D319FED596}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind.WebUI", "Northwind.WebUI\Northwind.WebUI.csproj", "{0F03DFAE-C080-4664-9388-48D319FED596}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{EC5E1FDD-2897-4272-B463-DC6B8F09E027}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Norwind.Domain", "Norwind.Domain\Norwind.Domain.csproj", "{4CA74C12-894B-4A44-897E-4B73DE6C9F7C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Norwind.Domain", "Norwind.Domain\Norwind.Domain.csproj", "{4CA74C12-894B-4A44-897E-4B73DE6C9F7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Application", "Northwind.Application\Northwind.Application.csproj", "{A5DE7FF5-C6C5-4722-A48F-50E7E77080EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind.Application", "Northwind.Application\Northwind.Application.csproj", "{A5DE7FF5-C6C5-4722-A48F-50E7E77080EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Persistence", "Northwind.Persistence\Northwind.Persistence.csproj", "{8EA9C726-F84E-49E8-BB6F-36AAAE11DEC4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind.Persistence", "Northwind.Persistence\Northwind.Persistence.csproj", "{8EA9C726-F84E-49E8-BB6F-36AAAE11DEC4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Doc", "Doc", "{78961B87-3163-4574-88AD-BDC0D101300D}"
+	ProjectSection(SolutionItems) = preProject
+		..\ReadMe.md = ..\ReadMe.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

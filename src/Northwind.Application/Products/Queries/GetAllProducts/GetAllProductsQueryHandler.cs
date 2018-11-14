@@ -1,29 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+using AutoMapper;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Northwind.Persistence;
 
-namespace Northwind.Application.Products.Queries
+namespace Northwind.Application.Products.Queries.GetProducts
 {
     public class GetAllProductsQueryHandler : IRequestHandler<GetAllProductsQuery, ProductsListResult>
     {
         private readonly NorthwindDbContext _dbContext;
         private readonly ILogger<GetAllProductsQueryHandler> _logger;
-        public GetAllProductsQueryHandler(NorthwindDbContext context, ILogger<GetAllProductsQueryHandler> logger)
+        private readonly IMapper _mapper;
+        public GetAllProductsQueryHandler(NorthwindDbContext context, IMapper mapper, ILogger<GetAllProductsQueryHandler> logger)
         {
+            this._mapper = mapper;
             this._logger = logger;
             this._dbContext = context;
         }
         public async Task<ProductsListResult> Handle(GetAllProductsQuery request, CancellationToken cancellationToken)
         {
             var products = await _dbContext.Products
-                .Select(x => new ProductDto {ProductName = x.ProductName})
+                .Select(x => this._mapper.Map<ProductDto>(x))
                 .ToListAsync(cancellationToken);
 
             return new ProductsListResult {Products = products};

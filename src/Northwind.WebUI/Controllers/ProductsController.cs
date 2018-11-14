@@ -1,11 +1,10 @@
-﻿using System.Collections.Generic;
-using System.Net;
+﻿using System.Net;
 using System.Threading.Tasks;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Northwind.Application.Products.Queries;
-using Northwind.Persistence;
+using Northwind.Application.Products.Queries.GetProduct;
+using Northwind.Application.Products.Queries.GetProducts;
 
 
 namespace Northwind.WebUI.Controllers
@@ -31,9 +30,9 @@ namespace Northwind.WebUI.Controllers
 
         // GET: api/Products/5
         [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
+        public Task<ProductResult> Get(int id)
         {
-            return Ok("1");
+            return this._mediator.Send(new GetProductQuery(id));
         }
 
     }
