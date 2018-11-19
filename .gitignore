@@ -18,6 +18,7 @@ bld/
 [Bb]in/
 [Oo]bj/
 [Ll]og/
+[Ll]ogs/
 
 # Visual Studio IDE cache/options directory
 .vs/

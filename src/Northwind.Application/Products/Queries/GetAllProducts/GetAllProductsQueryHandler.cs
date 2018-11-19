@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Northwind.Persistence;
 
-namespace Northwind.Application.Products.Queries.GetProducts
+namespace Northwind.Application.Products.Queries.GetAllProducts
 {
     public class GetAllProductsQueryHandler : IRequestHandler<GetAllProductsQuery, ProductsListResult>
     {
@@ -22,6 +22,8 @@ namespace Northwind.Application.Products.Queries.GetProducts
         }
         public async Task<ProductsListResult> Handle(GetAllProductsQuery request, CancellationToken cancellationToken)
         {
+
+
             var products = await _dbContext.Products
                 .Select(x => this._mapper.Map<ProductDto>(x))
                 .ToListAsync(cancellationToken);

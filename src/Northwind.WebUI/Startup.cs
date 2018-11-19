@@ -9,7 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json;
 using Northwind.Application;
-using Northwind.Application.Products.Queries.GetProducts;
+using Northwind.Application.Products.Queries.GetAllProducts;
 using Northwind.Persistence;
 using Northwind.WebUI.Extensions.MvcOptionsExtension;
 
@@ -34,7 +34,7 @@ namespace Northwind.WebUI
 
             services.AddDbContext<NorthwindDbContext>(opts =>
             {
-                opts.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))
+                opts.UseSqlServer(Configuration.GetConnectionString("MemoryConnection"))
                     .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
             });
 
@@ -50,6 +50,8 @@ namespace Northwind.WebUI
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseCors(b=>b.AllowAnyOrigin());
 
             app.UseMvc();
         }

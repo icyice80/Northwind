@@ -3,8 +3,8 @@ using System.Threading.Tasks;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Northwind.Application.Products.Queries.GetAllProducts;
 using Northwind.Application.Products.Queries.GetProduct;
-using Northwind.Application.Products.Queries.GetProducts;
 
 
 namespace Northwind.WebUI.Controllers
